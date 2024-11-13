@@ -1,4 +1,0 @@
-streamlit==1.39.0
-pyannote.database==5.1.0
-pandas==2.2.2
-scikit-learn

@@ -97,8 +97,7 @@ if not st.session_state['main_page']:
     if st.button("Click here to start"):
         st.session_state['main_page'] = True
 
-    # Links section below button
-    st.markdown('<p class="white-text">Find more properties on <a href="https://www.propertyfinder.ae" target="_blank" style="color: #1E90FF;">Property Finder</a> and <a href="https://www.bayut.com" target="_blank" style="color: #1E90FF;">Bayut</a></p>', unsafe_allow_html=True)
+    
 
 else:
     st.title("🏠 Property Price Prediction")
@@ -175,6 +174,8 @@ else:
                         ),
                     ],
                 ))
+                # Links section below button
+                st.markdown('<p class="white-text">Find more properties on <a href="https://www.propertyfinder.ae" target="_blank" style="color: #1E90FF;">Property Finder</a> and <a href="https://www.bayut.com" target="_blank" style="color: #1E90FF;">Bayut</a></p>', unsafe_allow_html=True)
 
             except Exception as e:
                 st.error(f"Prediction error: {e}")
